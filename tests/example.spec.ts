@@ -21,5 +21,9 @@ test('Log In', async ({ page }) => {
 // verify register function
 
 test('Register', async ({page }) => {
-  
+  // navigate to Wiley online library website
+  await page.goto('https://onlinelibrary.wiley.com/');
+
+  // click on login / register button
+  await page.getByText('Login / Register').click();
 })
